@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #0F172A;
+  --color-brand-card: #111827;
+  --color-brand-accent: #3B82F6;
+  --color-brand-accent-hover: #2563EB;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Outfit', system-ui, sans-serif;
+}
+
+/* Global Styles */
+html, body {
+  background-color: var(--color-brand-bg);
+  color: #ffffff;
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Scrollbar Customization */
+html {
+  --scrollbar-thumb: #3B82F6;
+  --scrollbar-track: #0F172A;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  scrollbar-width: thin;
+}
+
+@supports not (scrollbar-color: auto) {
+  html::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  html::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 9999px;
+  }
+  html::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+  }
+}
+
+/* Custom Utilities */
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Fade-in Animation */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Selection */
+::selection {
+  background-color: rgba(59, 130, 246, 0.3);
+  color: #ffffff;
+}
