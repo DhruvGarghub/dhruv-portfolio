@@ -89,7 +89,7 @@ export default function Hero() {
           </a>
 
           <a
-            href="https://linkedin.com/in/dhruv-garg-placeholder" // Placeholder as requested
+            href="https://www.linkedin.com/in/dhruv-garg-a62365322/" // Placeholder as requested
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center space-x-2 bg-[#111827] border border-gray-800 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:border-brand-accent hover:-translate-y-0.5 active:translate-y-0"

@@ -28,7 +28,7 @@ export default function Footer() {
             <Github size={16} />
           </a>
           <a
-            href="https://linkedin.com/in/dhruv-garg-placeholder"
+            href="https://www.linkedin.com/in/dhruv-garg-a62365322/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition-colors duration-200"
